@@ -17,7 +17,7 @@
 [% 'jquery/jquery.bxslider.min.js' | global_asset_uri | script_tag %]
 [% content_for_header %]
 <style type="text/css">
-[% 'body {background-color:#' _ settings.background_color _ '}' if settings.background_color %]
+[% 'body {background-color: ' _ settings.background_color _ '}' if settings.background_color %]
 </style>
 </head>
 <body>
@@ -32,8 +32,9 @@
   </script>
   
   <div id="outer_wrapper">
-    
-    <div id="header_wrapper" style="background: url('[% header_wrapper_name %].png') no-repeat top left transparent">
+
+    <div id="header_wrapper"
+        style="background: url('[% settings.header_wrapper_uri || header_wrapper_name _ '.png' %]') no-repeat top center transparent;">
       <div id="header">
 
           <div class="logo_wrapper">
