@@ -383,10 +383,10 @@ form .hint_area {
 }
 #header .topbar{
   position:absolute;	
-	width:552px;
+	width:570px;
 	height:20px;
   top:15px;
-  right:0px;
+  right:20px;
 	text-align:right;
 }
 #header  .nav {
@@ -467,7 +467,7 @@ form .hint_area {
 #header .cart_status{
   position:absolute;
   top:56px;
-  right:0px;
+  right:20px;
 }
 #header .cart_status .widgets{
 	position:relative;
